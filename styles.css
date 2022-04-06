@@ -1,16 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h3 {
+  font-family: "Lora", serif;
+}
+
 #banner {
   background-image: url("images/bannerBG.jpg");
   background-size: cover;
 }
 
+#aboutUs {
+  background-image: url("/images/aboutUsBG.jpg");
+  background-size: cover;
+}
+
+.videoBox {
+  display: block;
+  min-width: 315px;
+  max-width: 325px;
+  height: 400px;
+  background-color: #333333;
+}
+
 @media screen and (min-width: 325px) and (max-width: 739px) {
   h3 {
-    font-size: 0.65rem;
+    font-size: 0.75rem;
+  }
+  p {
+    font-size: 0.7rem;
   }
 }
 
 @media screen and (min-width: 740px) and (max-width: 991px) {
   h3 {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
+  }
+  p {
+    font-size: 0.8rem;
   }
 }
