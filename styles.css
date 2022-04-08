@@ -2,46 +2,181 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap");
+
 body {
   font-family: "Lato", sans-serif;
+  color: #333333;
 }
 
-h3 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Lora", serif;
+}
+
+h1 {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+}
+
+a {
+  color: #dab844;
+  text-decoration: none;
 }
 
 #banner {
   background-image: url("images/bannerBG.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+}
+
+.infoText {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.infoVideo {
+  font-size: 1.65rem;
+  letter-spacing: 0.1rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 #aboutUs {
   background-image: url("/images/aboutUsBG.jpg");
   background-size: cover;
+  min-height: 500px;
 }
 
+.aboutBox {
+  position: relative;
+  background-color: white;
+  top: 3em;
+  padding: 2em 3em;
+}
+
+#aboutUs h4 {
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+}
+
+#moreExamples {
+  background: linear-gradient(180deg, #ffdda3 0%, #ffffff 100%);
+}
+
+#moreExamples h3 {
+  font-family: "Lato", sans-serif;
+  letter-spacing: 2px;
+}
 .videoBox {
-  display: block;
-  min-width: 315px;
-  max-width: 325px;
-  height: 400px;
   background-color: #333333;
 }
 
+.videoBox h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.videoBox p {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.videoPlayer {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.moreVideo {
+  width: 100%;
+}
+
+footer {
+  background-color: #f2f2f2;
+  font-family: "Montserrat", sans-serif;
+}
+
+footer p {
+  font-size: 1.2rem;
+}
+
+footer p em {
+  font-size: 1rem;
+  color: rgb(129, 129, 129);
+}
+
+.footBottomText p {
+  font-size: 1rem;
+}
+
+.smText {
+  font-size: 0.9rem;
+}
+
+.moveUp20 {
+  display: block;
+  margin-top: -20px;
+}
+
 @media screen and (min-width: 325px) and (max-width: 739px) {
+  h1,
   h3 {
     font-size: 0.75rem;
   }
+
   p {
+    font-size: 0.7rem;
+  }
+
+  .infoText {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  #aboutUs {
+    min-height: 850px;
+  }
+
+  .smText {
     font-size: 0.7rem;
   }
 }
 
 @media screen and (min-width: 740px) and (max-width: 991px) {
+  h1,
   h3 {
     font-size: 0.9rem;
   }
   p {
     font-size: 0.8rem;
+  }
+
+  .smText {
+    font-size: 0.75rem;
+  }
+
+  .infoText {
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+
+  #aboutUs {
+    min-height: 850px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1260px) {
+  .smText {
+    font-size: 0.6rem;
   }
 }
